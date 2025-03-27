@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>black box ia</title>
+    <style>
+        /* CSS interno */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+    </header>
+    
+    <!-- Navegação -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    
+    <!-- Conteúdo Principal -->
+    <main>
+        <section id="home">
+            <h2>Página Inicial</h2>
+            <p>Este é um parágrafo de exemplo em HTML.</p>
+            
+            <article>
+                <h3>Artigo Recente</h3>
+                <p>Conteúdo do artigo...</p>
+            </article>
+        </section>
+        
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Informações sobre a empresa ou pessoa.</p>
+        </section>
+        
+        <!-- Listas -->
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Web Design</li>
+                <li>Desenvolvimento</li>
+                <li>Consultoria</li>
+            </ul>
+            
+            <h3>Ordem de Prioridade</h3>
+            <ol>
+                <li>Atendimento ao Cliente</li>
+                <li>Qualidade</li>
+                <li>Inovação</li>
+            </ol>
+        </section>
+        
+        <!-- Formulário -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="/enviar" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+        <!-- Tabela -->
+        <section>
+            <h2>Tabela de Exemplo</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Serviço A</td>
+                        <td>R$ 100,00</td>
+                    </tr>
+                    <tr>
+                        <td>Serviço B</td>
+                        <td>R$ 150,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Exemplo de JavaScript
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Formulário enviado com sucesso!');
+        });
+    </script>
+</body>
+</html>
